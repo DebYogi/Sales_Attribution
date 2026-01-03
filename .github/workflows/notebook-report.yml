@@ -1,0 +1,28 @@
+name: Notebook report
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-ci.txt
+      - name: Execute notebook and generate report
+        run: |
+          python scripts/generate_report.py
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: notebook-outputs
+          path: notebooks/outputs
