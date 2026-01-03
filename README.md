@@ -1,4 +1,4 @@
-# Sales Attribution Demo
+# Sales Attribution using Multiple method
 
 This project demonstrates and compares five attribution approaches on a synthetic dataset:
 
