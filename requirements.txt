@@ -1,0 +1,16 @@
+numpy>=1.23
+pandas>=1.5
+scipy
+scikit-learn
+networkx
+matplotlib
+seaborn
+jupyter
+notebook
+# Optional / recommended for causal and Bayesian approaches
+econml>=0.12; python_version>="3.8"
+dowhy
+pymc>=5.0
+arviz
+statsmodels
+tqdm
