@@ -61,13 +61,3 @@ Notes
 - The synthetic data here is designed to illustrate differences; real data requires careful preprocessing, deduplication of users, and alignment of exposures and conversion windows.
 - PyMC and EconML runs may be slow; tweak `draws` and `tune` in the Bayesian model for faster debugging.
 
----
-
-If you'd like, I can (choose one):
-
-- Run the notebook and generate a set of plots and an output report (PDF/HTML).
-- Add example visualizations to the notebook comparing credit allocations across methods.
-- Replace the PyMC model with a CmdStanPy model if you prefer CmdStan for speed.
-
-
-License: MIT
